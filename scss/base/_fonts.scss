@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: font('ProximaNova-Regular', 'ProximaNova-Regular.eot'),
+         font('ProximaNova-Regular', 'ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+         font('ProximaNova-Regular', 'ProximaNova-Regular.woff2') format('woff2'),
+         font('ProximaNova-Regular', 'ProximaNova-Regular.woff') format('woff'),
+         font('ProximaNova-Regular', 'ProximaNova-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: font('ProximaNova-Semibold', 'ProximaNova-Semibold.eot'),
+         font('ProximaNova-Semibold', 'ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+         font('ProximaNova-Semibold', 'ProximaNova-Semibold.woff2') format('woff2'),
+         font('ProximaNova-Semibold', 'ProximaNova-Semibold.woff') format('woff'),
+         font('ProximaNova-Semibold', 'ProximaNova-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: font('ProximaNova-Bold', 'ProximaNova-Bold.eot'),
+         font('ProximaNova-Bold', 'ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+         font('ProximaNova-Bold', 'ProximaNova-Bold.woff2') format('woff2'),
+         font('ProximaNova-Bold', 'ProximaNova-Bold.woff') format('woff'),
+         font('ProximaNova-Bold', 'ProximaNova-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: font('ProximaNova-Extrabld', 'ProximaNova-Extrabld.eot'),
+         font('ProximaNova-Extrabld', 'ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+         font('ProximaNova-Extrabld', 'ProximaNova-Extrabld.woff2') format('woff2'),
+         font('ProximaNova-Extrabld', 'ProximaNova-Extrabld.woff') format('woff'),
+         font('ProximaNova-Extrabld', 'ProximaNova-Extrabld.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}

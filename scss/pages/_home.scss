@@ -1,0 +1,15 @@
+.banner {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        background-image: image('testing.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 832px;
+        height: 909px;
+    }
+}
