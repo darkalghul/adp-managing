@@ -243,6 +243,27 @@ header {
   margin-bottom: 20px;
 }
 
+.payroll-operations .image-container {
+  position: relative;
+  width: 100%;
+  max-width: 50%;
+}
+
+.payroll-operations .image-container .numbers {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.payroll-operations .image-container .numbers p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.payroll-operations .image-container .numbers .lightbulb {
+  font-size: 40px;
+}
+
 @media (min-width: 576px) {
   .banner .left-side {
     position: relative;

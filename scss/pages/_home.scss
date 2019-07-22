@@ -28,6 +28,27 @@
         margin-top: 0;
         margin-bottom: 20px;
     }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        max-width: 50%;
+
+        .numbers {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            p {
+                margin-bottom: 0;
+                font-weight: 600;
+            }
+
+            .lightbulb {
+                font-size: 40px;
+            }
+        }
+    }
 }
 
 @media(min-width: 576px) {
