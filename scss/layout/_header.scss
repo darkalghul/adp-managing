@@ -2,10 +2,13 @@ header {
     position: absolute;
     width: 100%;
     padding: 1rem .5rem;
+}
 
-    .brand-link {
-        .img-fluid {
-            // max-width: 130px;
+@media(min-width: 1440px) {
+    header {
+        .row {
+            margin-left: 6rem;
+            margin-right: 6rem;
         }
     }
 }

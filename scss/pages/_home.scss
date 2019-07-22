@@ -1,6 +1,23 @@
 .banner {
     @include linear-gradient-horizontal(#9E1F64, #92278F);
     padding-top: 80px;
+    padding-bottom: 30px;
+
+    .caption {
+        text-align: center;
+
+        h1 {
+            color: $white;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: $white;
+            font-size: .8rem;
+        }
+    }
 }
 
 @media(min-width: 576px) {
@@ -51,6 +68,7 @@
 @media(min-width: 768px) {
     .banner {
         padding-top: 100px;
+        padding-bottom: 40px;
 
         .left-side {
             &:before {
@@ -69,6 +87,16 @@
                 background-size: 155px;
                 width: 174px;
                 height: 118px;
+            }
+        }
+
+        .caption {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
             }
         }
     }
@@ -92,6 +120,16 @@
                 background-size: 210px;
                 width: 215px;
                 height: 152px;
+            }
+        }
+
+        .caption {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            p {
+                font-size: 1.4rem;
             }
         }
     }

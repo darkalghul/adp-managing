@@ -45,10 +45,6 @@ h5 {
   text-transform: none;
 }
 
-h1 {
-  text-transform: uppercase;
-}
-
 p {
   color: #56565A;
   word-wrap: break-word;
@@ -165,6 +161,13 @@ header {
   padding: 1rem .5rem;
 }
 
+@media (min-width: 1440px) {
+  header .row {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+}
+
 .btn {
   font-size: 16px;
 }
@@ -203,6 +206,23 @@ header {
   background: linear-gradient(to left, #9E1F64, #92278F);
   filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#9E1F64', end-colourStr='#92278F', gradientType='1');
   padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.banner .caption {
+  text-align: center;
+}
+
+.banner .caption h1 {
+  color: #FFFFFF;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.banner .caption p {
+  color: #FFFFFF;
+  font-size: .8rem;
 }
 
 @media (min-width: 576px) {
@@ -250,6 +270,7 @@ header {
 @media (min-width: 768px) {
   .banner {
     padding-top: 100px;
+    padding-bottom: 40px;
   }
   .banner .left-side:before {
     top: 2px;
@@ -264,6 +285,12 @@ header {
     background-size: 155px;
     width: 174px;
     height: 118px;
+  }
+  .banner .caption h1 {
+    font-size: 2.2rem;
+  }
+  .banner .caption p {
+    font-size: 1.1rem;
   }
 }
 
@@ -280,6 +307,12 @@ header {
     background-size: 210px;
     width: 215px;
     height: 152px;
+  }
+  .banner .caption h1 {
+    font-size: 2.8rem;
+  }
+  .banner .caption p {
+    font-size: 1.4rem;
   }
 }
 
