@@ -20,6 +20,16 @@
     }
 }
 
+.payroll-operations {
+    padding-top: 15px;
+
+    h2 {
+        color: #016aa8;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
 @media(min-width: 576px) {
     .banner {
         .left-side {
@@ -100,6 +110,14 @@
             }
         }
     }
+
+    .payroll-operations {
+        padding-top: 32px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media(min-width: 992px) {
@@ -153,6 +171,23 @@
                 left: 116px;
                 background-size: 250px;
                 width: 250px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1440px) {
+    .payroll-operations {
+        .mx-6 {
+            margin-left: 6rem;
+            margin-right: 6rem;
+        }
+
+        svg {
+            max-width: 50%;
+
+            &.calculator {
+                max-width: 42%;
             }
         }
     }
