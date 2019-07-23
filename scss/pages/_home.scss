@@ -26,6 +26,7 @@
 
         .cls-2, .cls-4 {
             fill: $white;
+            clip-path: none;
         }
 
         .cls-5 {
@@ -44,7 +45,7 @@
         }
 
         .cls-3 {
-            fill: unset;
+            clip-path: none;
             stroke: none;
         }
     }
