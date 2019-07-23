@@ -20,4 +20,31 @@ $(document).ready(function() {
     for (j = 0; j < countersQuantity; j++) {
         count(0, counter[j], j);
     }
+
+    // $svg = $('svg').drawsvg({
+    //     callback: function() {
+    //         animate();
+    //     }
+    // });
+
+    // function animate() {
+    //     $svg.drawsvg('animate');  
+    // }
+
+    // animate();
+
+    var $calculator = $('#calculator').drawsvg();
+    var $lightbulb = $('#lightbulb').drawsvg();
+    $calculator.drawsvg('animate');
+    $lightbulb.drawsvg('animate');
 });
+
+// var $doc = $(document),
+//     $wind = $(window),
+//     $calculator = $('#calculator').drawsvg(),
+//     max = $doc.height() - $wind.height();
+
+// $win.on('scroll', function() {
+//     let p = $wind.scrollTop() / max;
+//     $calculator.drawsvg('progress', p);
+// });

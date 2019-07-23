@@ -18,6 +18,36 @@
             font-size: .8rem;
         }
     }
+
+    #canada {
+        .cls-1, .cls-3 {
+            stroke: $white;
+        }
+
+        .cls-2, .cls-4 {
+            fill: $white;
+        }
+
+        .cls-5 {
+            fill: #d1041f;
+            fill-rule: initial;
+        }
+
+        g.cls-3 {
+            stroke: none;
+        }
+    }
+
+    #usa {
+        .cls-2 {
+            fill: $white;
+        }
+
+        .cls-3 {
+            fill: unset;
+            stroke: none;
+        }
+    }
 }
 
 .payroll-operations {
@@ -31,8 +61,22 @@
 
     .image-container {
         position: relative;
-        width: 100%;
-        max-width: 50%;
+        
+        #lightbulb {
+            .cls-1 {
+                stroke-width: 3px;
+            }
+
+            .cls-2 {
+                fill: #faa21d;
+            }
+
+            #line {
+                stroke: #0071bc;
+                stroke-width: 3.9px;
+                clip-path: none;
+            }
+        }
 
         .numbers {
             position: absolute;
@@ -57,20 +101,20 @@
             position: relative;
             z-index: 1;
 
-            &:before {
-                content: "";
-                position: absolute;
-                top: 0px;
-                right: 44px;
-                z-index: -1;
-                background-image: image("canada-flag.svg");
-                background-position: center center;
-                background-size: 102px;
-                background-repeat: no-repeat;
-                width: 100px;
-                height: 88px;
-                animation: scale 2s;
-            }
+            // &:before {
+            //     content: "";
+            //     position: absolute;
+            //     top: 0px;
+            //     right: 44px;
+            //     z-index: -1;
+            //     background-image: image("canada-flag.svg");
+            //     background-position: center center;
+            //     background-size: 102px;
+            //     background-repeat: no-repeat;
+            //     width: 100px;
+            //     height: 88px;
+            //     animation: scale 2s;
+            // }
         }
 
         .right-side {
@@ -78,20 +122,20 @@
             background-image: none;
             z-index: 1;
 
-            &:before {
-                content: "";
-                position: absolute;
-                top: -10px;
-                left: 50px;
-                z-index: -1;
-                background-image: image("usa-flag.svg");
-                background-position: center center;
-                background-size: 112px;
-                background-repeat: no-repeat;
-                width: 114px;
-                height: 88px;
-                animation: scale 2s;
-            }
+            // &:before {
+            //     content: "";
+            //     position: absolute;
+            //     top: -10px;
+            //     left: 50px;
+            //     z-index: -1;
+            //     background-image: image("usa-flag.svg");
+            //     background-position: center center;
+            //     background-size: 112px;
+            //     background-repeat: no-repeat;
+            //     width: 114px;
+            //     height: 88px;
+            //     animation: scale 2s;
+            // }
         }
     }
 }

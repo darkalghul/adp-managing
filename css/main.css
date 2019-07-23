@@ -111,14 +111,6 @@ img {
   margin: 0 auto;
 }
 
-.cls-yellow {
-  fill: #faa21d !important;
-}
-
-.cls-min-stroke {
-  stroke-width: 3px !important;
-}
-
 @-webkit-keyframes scale {
   0% {
     opacity: 0;
@@ -166,14 +158,11 @@ img {
 header {
   position: absolute;
   width: 100%;
-  padding: 1rem .5rem;
 }
 
-@media (min-width: 1440px) {
-  header .row {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
+header #logo .cls-1 {
+  fill: #FFFFFF;
+  stroke: none;
 }
 
 .btn {
@@ -233,6 +222,32 @@ header {
   font-size: .8rem;
 }
 
+.banner #canada .cls-1, .banner #canada .cls-3 {
+  stroke: #FFFFFF;
+}
+
+.banner #canada .cls-2, .banner #canada .cls-4 {
+  fill: #FFFFFF;
+}
+
+.banner #canada .cls-5 {
+  fill: #d1041f;
+  fill-rule: initial;
+}
+
+.banner #canada g.cls-3 {
+  stroke: none;
+}
+
+.banner #usa .cls-2 {
+  fill: #FFFFFF;
+}
+
+.banner #usa .cls-3 {
+  fill: unset;
+  stroke: none;
+}
+
 .payroll-operations {
   padding-top: 15px;
 }
@@ -245,8 +260,21 @@ header {
 
 .payroll-operations .image-container {
   position: relative;
-  width: 100%;
-  max-width: 50%;
+}
+
+.payroll-operations .image-container #lightbulb .cls-1 {
+  stroke-width: 3px;
+}
+
+.payroll-operations .image-container #lightbulb .cls-2 {
+  fill: #faa21d;
+}
+
+.payroll-operations .image-container #lightbulb #line {
+  stroke: #0071bc;
+  stroke-width: 3.9px;
+  -webkit-clip-path: none;
+          clip-path: none;
 }
 
 .payroll-operations .image-container .numbers {
@@ -269,40 +297,10 @@ header {
     position: relative;
     z-index: 1;
   }
-  .banner .left-side:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 44px;
-    z-index: -1;
-    background-image: url("../assets/images/canada-flag.svg");
-    background-position: center center;
-    background-size: 102px;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 88px;
-    -webkit-animation: scale 2s;
-            animation: scale 2s;
-  }
   .banner .right-side {
     position: relative;
     background-image: none;
     z-index: 1;
-  }
-  .banner .right-side:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 50px;
-    z-index: -1;
-    background-image: url("../assets/images/usa-flag.svg");
-    background-position: center center;
-    background-size: 112px;
-    background-repeat: no-repeat;
-    width: 114px;
-    height: 88px;
-    -webkit-animation: scale 2s;
-            animation: scale 2s;
   }
 }
 
