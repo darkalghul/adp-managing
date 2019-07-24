@@ -230,6 +230,7 @@ header #logo .cls-1 {
   fill: #FFFFFF;
   -webkit-clip-path: none;
           clip-path: none;
+  stroke: none;
 }
 
 .banner #canada .cls-5 {
@@ -243,6 +244,7 @@ header #logo .cls-1 {
 
 .banner #usa .cls-2 {
   fill: #FFFFFF;
+  stroke: none;
 }
 
 .banner #usa .cls-3 {
@@ -267,6 +269,7 @@ header #logo .cls-1 {
 
 .payroll-operations .image-container #lightbulb .cls-1 {
   stroke-width: 3px;
+  fill: #faa21d;
 }
 
 .payroll-operations .image-container #lightbulb .cls-2 {
@@ -276,6 +279,24 @@ header #logo .cls-1 {
 .payroll-operations .image-container #lightbulb #line {
   stroke: #0071bc;
   stroke-width: 3.9px;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+
+.payroll-operations .image-container #calculator .cls-1 {
+  fill: #FFFFFF;
+}
+
+.payroll-operations .image-container #calculator .cls-2 {
+  fill: #df84ba;
+}
+
+.payroll-operations .image-container #bill .cls-1 {
+  fill: #c4da5a;
+}
+
+.payroll-operations .image-container #bill .cls-3 {
+  stroke-linecap: round;
   -webkit-clip-path: none;
           clip-path: none;
 }
@@ -330,7 +351,7 @@ header #logo .cls-1 {
     font-size: 2.2rem;
   }
   .banner .caption p {
-    font-size: 1.1rem;
+    font-size: 15px;
   }
   .payroll-operations {
     padding-top: 32px;
@@ -355,10 +376,10 @@ header #logo .cls-1 {
     height: 152px;
   }
   .banner .caption h1 {
-    font-size: 2.8rem;
+    font-size: 35px;
   }
   .banner .caption p {
-    font-size: 1.4rem;
+    font-size: 17px;
   }
 }
 
@@ -382,12 +403,6 @@ header #logo .cls-1 {
   .payroll-operations .mx-6 {
     margin-left: 6rem;
     margin-right: 6rem;
-  }
-  .payroll-operations svg {
-    max-width: 50%;
-  }
-  .payroll-operations svg.calculator {
-    max-width: 42%;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -27,6 +27,7 @@
         .cls-2, .cls-4 {
             fill: $white;
             clip-path: none;
+            stroke: none;
         }
 
         .cls-5 {
@@ -42,6 +43,7 @@
     #usa {
         .cls-2 {
             fill: $white;
+            stroke: none;
         }
 
         .cls-3 {
@@ -66,6 +68,7 @@
         #lightbulb {
             .cls-1 {
                 stroke-width: 3px;
+                fill: #faa21d;
             }
 
             .cls-2 {
@@ -75,6 +78,26 @@
             #line {
                 stroke: #0071bc;
                 stroke-width: 3.9px;
+                clip-path: none;
+            }
+        }
+
+        #calculator {
+            .cls-1 {
+                fill: $white;
+            }
+
+            .cls-2 {
+                fill: #df84ba;
+            }
+        }
+
+        #bill {
+            .cls-1 {
+                fill: #c4da5a;
+            }
+            .cls-3 {
+                stroke-linecap: round;
                 clip-path: none;
             }
         }
@@ -172,7 +195,7 @@
             }
 
             p {
-                font-size: 1.1rem;
+                font-size: 15px;
             }
         }
     }
@@ -209,11 +232,11 @@
 
         .caption {
             h1 {
-                font-size: 2.8rem;
+                font-size: 35px;
             }
 
             p {
-                font-size: 1.4rem;
+                font-size: 17px;
             }
         }
     }
@@ -250,10 +273,10 @@
         }
 
         svg {
-            max-width: 50%;
+            // max-width: 50%;
 
             &.calculator {
-                max-width: 42%;
+                // max-width: 42%;
             }
         }
     }
