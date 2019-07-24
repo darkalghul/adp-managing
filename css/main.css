@@ -165,6 +165,122 @@ header #logo .cls-1 {
   stroke: none;
 }
 
+#logo .cls-1 {
+  fill: #FFFFFF;
+}
+
+#canada .cls-1 {
+  fill: none;
+}
+
+#canada .cls-2, #canada .cls-4 {
+  fill: #fff;
+}
+
+#canada .cls-3 {
+  -webkit-clip-path: url(#clip-path);
+          clip-path: url(#clip-path);
+}
+
+#canada .cls-4, #canada .cls-5 {
+  fill-rule: evenodd;
+}
+
+#canada .cls-5 {
+  fill: #d1041f;
+}
+
+#usa .cls-1 {
+  fill: none;
+}
+
+#usa .cls-2, #usa .cls-7 {
+  fill: #fff;
+}
+
+#usa .cls-3 {
+  -webkit-clip-path: url(#clip-path);
+          clip-path: url(#clip-path);
+}
+
+#usa .cls-4 {
+  -webkit-clip-path: url(#clip-path-2);
+          clip-path: url(#clip-path-2);
+}
+
+#usa .cls-5 {
+  fill: #d1041f;
+}
+
+#usa .cls-5, #usa .cls-6, #usa .cls-7 {
+  fill-rule: evenodd;
+}
+
+#usa .cls-6 {
+  fill: #325875;
+}
+
+#lightbulb .cls-1, #lightbulb .cls-3 {
+  fill: none;
+  stroke: #0071bc;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#lightbulb .cls-1 {
+  stroke-width: 3px;
+}
+
+#lightbulb .cls-2 {
+  fill: #faa21d;
+}
+
+#lightbulb .cls-3 {
+  stroke-width: 3.9px;
+}
+
+#calculator .cls-1 {
+  fill: none;
+  stroke: #0071bc;
+  stroke-miterlimit: 10;
+  stroke-width: 4.29px;
+}
+
+#calculator .cls-2 {
+  fill: #df84ba;
+}
+
+#bill .cls-1 {
+  fill: #c4da5a;
+}
+
+#bill .cls-2,
+#bill .cls-3 {
+  fill: none;
+  stroke: #0071bc;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+}
+
+#bill .cls-3 {
+  stroke-linecap: square;
+}
+
+#gear .cls-1 {
+  fill: #b1e1fa;
+}
+
+#gear .cls-2, #gear .cls-3 {
+  fill: none;
+  stroke: #0071bc;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+}
+
+#gear .cls-3 {
+  stroke-linecap: round;
+}
+
 .btn {
   font-size: 16px;
 }
@@ -222,37 +338,6 @@ header #logo .cls-1 {
   font-size: .8rem;
 }
 
-.banner #canada .cls-1, .banner #canada .cls-3 {
-  stroke: #FFFFFF;
-}
-
-.banner #canada .cls-2, .banner #canada .cls-4 {
-  fill: #FFFFFF;
-  -webkit-clip-path: none;
-          clip-path: none;
-  stroke: none;
-}
-
-.banner #canada .cls-5 {
-  fill: #d1041f;
-  fill-rule: initial;
-}
-
-.banner #canada g.cls-3 {
-  stroke: none;
-}
-
-.banner #usa .cls-2 {
-  fill: #FFFFFF;
-  stroke: none;
-}
-
-.banner #usa .cls-3 {
-  -webkit-clip-path: none;
-          clip-path: none;
-  stroke: none;
-}
-
 .payroll-operations {
   padding-top: 15px;
 }
@@ -261,44 +346,23 @@ header #logo .cls-1 {
   color: #016aa8;
   margin-top: 0;
   margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.payroll-operations .align-mobile {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.payroll-operations .tagline {
+  font-size: 0.9rem;
+  margin-top: 35px;
+  margin-bottom: 0;
 }
 
 .payroll-operations .image-container {
   position: relative;
-}
-
-.payroll-operations .image-container #lightbulb .cls-1 {
-  stroke-width: 3px;
-  fill: #faa21d;
-}
-
-.payroll-operations .image-container #lightbulb .cls-2 {
-  fill: #faa21d;
-}
-
-.payroll-operations .image-container #lightbulb #line {
-  stroke: #0071bc;
-  stroke-width: 3.9px;
-  -webkit-clip-path: none;
-          clip-path: none;
-}
-
-.payroll-operations .image-container #calculator .cls-1 {
-  fill: #FFFFFF;
-}
-
-.payroll-operations .image-container #calculator .cls-2 {
-  fill: #df84ba;
-}
-
-.payroll-operations .image-container #bill .cls-1 {
-  fill: #c4da5a;
-}
-
-.payroll-operations .image-container #bill .cls-3 {
-  stroke-linecap: round;
-  -webkit-clip-path: none;
-          clip-path: none;
 }
 
 .payroll-operations .image-container .numbers {
@@ -310,10 +374,41 @@ header #logo .cls-1 {
 .payroll-operations .image-container .numbers p {
   margin-bottom: 0;
   font-weight: 600;
+  font-size: 50px;
 }
 
-.payroll-operations .image-container .numbers .lightbulb {
-  font-size: 40px;
+.payroll-operations .image-container .numbers.lightbulb p {
+  color: #faa21d;
+}
+
+.payroll-operations .image-container .numbers.calculator {
+  right: -75%;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
+.payroll-operations .image-container .numbers.calculator p {
+  color: #cb4398;
+}
+
+.payroll-operations .image-container .numbers.bill {
+  right: -75%;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
+.payroll-operations .image-container .numbers.bill p {
+  color: #c4da5a;
+}
+
+.payroll-operations .image-container .numbers.gear {
+  right: -75%;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
+.payroll-operations .image-container .numbers.gear p {
+  color: #64beeb;
 }
 
 @media (min-width: 576px) {
@@ -359,6 +454,21 @@ header #logo .cls-1 {
   .payroll-operations h2 {
     margin-bottom: 30px;
   }
+  .payroll-operations .first-draws svg {
+    width: 180px;
+    height: 225px;
+  }
+  .payroll-operations .tagline {
+    height: 60px;
+  }
+  .payroll-operations .align-mobile {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .payroll-operations .image-container .numbers p {
+    font-size: 66px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -381,6 +491,60 @@ header #logo .cls-1 {
   .banner .caption p {
     font-size: 17px;
   }
+  .payroll-operations {
+    padding-bottom: 100px;
+  }
+  .payroll-operations h2 {
+    font-size: 1.5rem;
+  }
+  .payroll-operations .first-draws .col-lg-5.offset-lg-1 {
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .payroll-operations .first-draws .col-lg-5.offset-lg-1:before {
+    content: "";
+    position: absolute;
+    background-color: #f4f4f5;
+    left: 0;
+    bottom: -50px;
+    width: calc(100% - 50px);
+    height: 8px;
+  }
+  .payroll-operations .first-draws .col-lg-5.offset-lg-1.left-align:before {
+    left: -40px;
+  }
+  .payroll-operations .col-lg-5.offset-lg-1 {
+    position: relative;
+  }
+  .payroll-operations .col-lg-5.offset-lg-1.middle:after {
+    content: "";
+    position: absolute;
+    background-color: #f4f4f5;
+    right: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+  }
+  .payroll-operations .image-container .numbers.lightbulb {
+    right: -30%;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  .payroll-operations .image-container .numbers.calculator {
+    right: -95%;
+    -webkit-transform: translateX(45%);
+            transform: translateX(45%);
+  }
+  .payroll-operations .image-container .numbers.bill {
+    right: -95%;
+    -webkit-transform: translateX(45%);
+            transform: translateX(45%);
+  }
+  .payroll-operations .image-container .numbers.gear {
+    right: -95%;
+    -webkit-transform: translateX(45%);
+            transform: translateX(45%);
+  }
 }
 
 @media (min-width: 1200px) {
@@ -397,12 +561,28 @@ header #logo .cls-1 {
     background-size: 250px;
     width: 250px;
   }
-}
-
-@media (min-width: 1440px) {
-  .payroll-operations .mx-6 {
-    margin-left: 6rem;
-    margin-right: 6rem;
+  .payroll-operations .tagline {
+    font-size: 1rem;
+  }
+  .payroll-operations .image-container .numbers.lightbulb {
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .payroll-operations .image-container .numbers.calculator {
+    right: -75%;
+    -webkit-transform: translateX(35%);
+            transform: translateX(35%);
+  }
+  .payroll-operations .image-container .numbers.bill {
+    right: -75%;
+    -webkit-transform: translateX(35%);
+            transform: translateX(35%);
+  }
+  .payroll-operations .image-container .numbers.gear {
+    right: -75%;
+    -webkit-transform: translateX(35%);
+            transform: translateX(35%);
   }
 }
 /*# sourceMappingURL=main.css.map */

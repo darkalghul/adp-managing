@@ -1,0 +1,46 @@
+#logo {
+    .cls-1 {
+        fill: $white;
+    }
+}
+#canada {
+    .cls-1{fill:none;}
+    .cls-2,.cls-4{fill:#fff;}
+    .cls-3{clip-path:url(#clip-path);}
+    .cls-4,.cls-5{fill-rule:evenodd;}
+    .cls-5{fill:#d1041f;}
+}
+
+#usa {
+    .cls-1{fill:none;}
+    .cls-2,.cls-7{fill:#fff;}
+    .cls-3{clip-path:url(#clip-path);}
+    .cls-4{clip-path:url(#clip-path-2);}
+    .cls-5{fill:#d1041f;}
+    .cls-5,.cls-6,.cls-7{fill-rule:evenodd;}
+    .cls-6{fill:#325875;}
+}
+
+#lightbulb {
+    .cls-1,.cls-3{fill:none;stroke:#0071bc;stroke-linecap:round;stroke-linejoin:round;}
+    .cls-1{stroke-width:3px;}
+    .cls-2{fill:#faa21d;}
+    .cls-3{stroke-width:3.9px;}
+}
+
+#calculator {
+    .cls-1{fill:none;stroke:#0071bc;stroke-miterlimit:10;stroke-width:4.29px;}
+    .cls-2{fill:#df84ba;}
+}
+
+#bill {
+    .cls-1{fill:#c4da5a;}.cls-2,
+    .cls-3{fill:none;stroke:#0071bc;stroke-linejoin:round;stroke-width:3px;}
+    .cls-3{stroke-linecap:square;}
+}
+
+#gear {
+    .cls-1{fill:#b1e1fa;}
+    .cls-2,.cls-3{fill:none;stroke:#0071bc;stroke-linejoin:round;stroke-width:3px;}
+    .cls-3{stroke-linecap:round;}
+}

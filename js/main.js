@@ -14,7 +14,7 @@ $(document).ready(function() {
                 localStart++;
                 counters[id].innerHTML = localStart + "%";
             }
-        }, 40);
+        }, 100);
     }
   
     for (j = 0; j < countersQuantity; j++) {
