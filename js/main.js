@@ -1,57 +1,26 @@
-let scroll = window.requestAnimationFrame ||
-             function(callback) {
-                 window.setTimeout(callback, 100/60)
-             };
-let numbers = $('.numbers'),
-              numbersQuantity = numbers.length,
-              counter = [];
-
-function moveOnScroll(dataCount, quantity, arrayCount) {
-    for (i = 0; i < quantity; i++) {
-        arrayCount[i] = parseInt(dataCount[i].innerHTML);
-    }
-    let count = function(start, value, id) {
-        let localStart = start;
-
-        setInterval(function() {
-            if (localStart < value) {
-                localStart++;
-                dataCount[id].innerHTML = localStart + ' %';
-            }
-        }, 40);
-    }
-
-    for (j = 0; j < quantity; j++) {
-        count(0, arrayCount[j], j);
-    }
-}
+let payrollCounter = 0,
+    toolsetCounter = 0,
+    businessCounter = 0;
 
 $(window).scroll(function() {
     onScroll('.numbers', '.counter');
+    onScroll('.count-container', '.countUp');
     onScroll('.counter-check', '.up');
 });
 
-function scrollCounter() {
-    if (isElementInViewPort(numbers)) {
-        moveOnScroll(numbers, numbersQuantity, counter);
-    }
-    scroll(scrollCounter);
-}
-
-function isElementInViewPort(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-        (rect.top <= 0 && rect.bottom >= 0) ||
-        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
-        (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
-    );
-}
-
-
 function onScroll(counterContainer, counter) {
-    // let a = 0;
+    let counterReset;
+
+    if (counterContainer === '.numbers') {
+        counterReset = payrollCounter;
+    } else if (counterContainer === '.count-container') {
+        counterReset = toolsetCounter;
+    } else if (counterContainer === '.counter-check') {
+        counterReset = businessCounter;
+    }
+
     var oTop = $(counterContainer).offset().top - window.innerHeight;
-    if ($(window).scrollTop() > oTop) {
+    if (counterReset == 0 && $(window).scrollTop() > oTop) {
         $(counter).each(function () {
             var $this = $(this),
                 countTo = $this.attr('data-count');
@@ -73,13 +42,47 @@ function onScroll(counterContainer, counter) {
 
                 });
         });
-        // a = 1;
+        if (counterContainer === '.numbers') {
+            payrollCounter = 1;
+        } else if (counterContainer === '.count-container') {
+            toolsetCounter = 1;
+        } else if (counterContainer === '.counter-check') {
+            businessCounter = 1;
+        }
     }
 }
+let lightbulb = new Vivus('lightbulb', {
+    type: 'oneByOne',
+    duration: 100,
+    animTimingFunction: Vivus.EASE
+});
 
-new Vivus('lightbulb');
-new Vivus('calculator');
-new Vivus('bill');
-new Vivus('gear');
-new Vivus('checklist');
-new Vivus('clock');
+let calculator = new Vivus('calculator', {
+    type: 'sync',
+    duration: 100,
+    animTimingFunction: Vivus.EASE
+});
+
+let bill = new Vivus('bill', {
+    type: 'scenario',
+    duration: 100,
+    animTimingFunction: Vivus.EASE
+});
+
+let gear = new Vivus('gear', {
+    type: 'oneByOne',
+    duration: 100,
+    animTimingFunction: Vivus.EASE
+});
+
+let checklist = new Vivus('checklist', {
+    type: 'scenario',
+    duration: 100,
+    animTimingFunction: Vivus.EASE
+});
+
+let clock = new Vivus('clock', {
+    type: 'sync',
+    duration: 100,
+    animTimingFunction: Vivus.EASE
+});

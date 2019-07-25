@@ -514,6 +514,10 @@ footer p {
   font-size: 50px;
 }
 
+.payroll-operations .image-container .numbers.lightbulb {
+  right: -14%;
+}
+
 .payroll-operations .image-container .numbers.lightbulb p {
   color: #faa21d;
 }
@@ -984,7 +988,7 @@ footer p {
     font-size: 1rem;
   }
   .payroll-operations .image-container .numbers.lightbulb {
-    right: 0;
+    right: -14%;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }

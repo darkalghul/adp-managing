@@ -57,6 +57,8 @@
             }
 
             &.lightbulb {
+                right: -14%;
+
                 p { color: #faa21d; }
             }
 
@@ -651,7 +653,7 @@
         .image-container {
             .numbers {
                 &.lightbulb {
-                    right: 0;
+                    right: -14%;
                     transform: translateX(0);
                 }
     
