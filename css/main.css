@@ -111,11 +111,9 @@ img {
   margin: 0 auto;
 }
 
-@-webkit-keyframes scale {
+@-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
   }
   25% {
     opacity: .25;
@@ -128,16 +126,12 @@ img {
   }
   100% {
     opacity: 1;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
   }
 }
 
-@keyframes scale {
+@keyframes fadeIn {
   0% {
     opacity: 0;
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
   }
   25% {
     opacity: .25;
@@ -150,14 +144,23 @@ img {
   }
   100% {
     opacity: 1;
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
   }
 }
 
 header {
   position: absolute;
   width: 100%;
+}
+
+footer {
+  background-color: #56565a;
+  padding: 25px 0 35px;
+  text-align: center;
+}
+
+footer p {
+  color: #FFFFFF;
+  margin-bottom: 0;
 }
 
 #logo .cls-1 {
@@ -228,6 +231,15 @@ header {
 
 #lightbulb .cls-2 {
   fill: #faa21d;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 #lightbulb .cls-3 {
@@ -243,14 +255,31 @@ header {
 
 #calculator .cls-2 {
   fill: #df84ba;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 #bill .cls-1 {
   fill: #c4da5a;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
-#bill .cls-2,
-#bill .cls-3 {
+#bill .cls-2, #bill .cls-3 {
   fill: none;
   stroke: #0071bc;
   stroke-linejoin: round;
@@ -263,6 +292,15 @@ header {
 
 #gear .cls-1 {
   fill: #b1e1fa;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 #gear .cls-2, #gear .cls-3 {
@@ -335,6 +373,15 @@ header {
 
 #checklist .cls-2 {
   fill: #df8aba;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 #checklist .cls-3 {
@@ -343,6 +390,15 @@ header {
 
 #clock .cls-1 {
   fill: #f9be00;
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 #clock .cls-2, #clock .cls-3 {
@@ -410,6 +466,7 @@ header {
   margin-top: 20px;
   font-size: 1.5rem;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .banner .caption p {
@@ -426,6 +483,7 @@ header {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .payroll-operations .align-mobile {
@@ -500,6 +558,7 @@ header {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .hr-system .info-container .text {
@@ -519,11 +578,39 @@ header {
   color: #65beeb;
 }
 
+.hr-system .mobile {
+  margin-bottom: 30px;
+}
+
+.hr-system .mobile .col-6:first-child {
+  position: relative;
+}
+
+.hr-system .mobile .col-6:first-child:after {
+  content: '';
+  position: absolute;
+  background-color: #696a69;
+  width: 8px;
+  height: calc(100% + 30px);
+  right: 5px;
+  top: -15px;
+}
+
 .hr-system .mobile svg {
   width: 130px;
   height: 229px;
   display: block;
-  margin: auto;
+  position: relative;
+}
+
+.hr-system .mobile svg#checklist-left {
+  margin-left: auto;
+  right: -15px;
+}
+
+.hr-system .mobile svg#checklist-right {
+  margin-right: auto;
+  left: -20px;
 }
 
 .hr-system .margin-custom {
@@ -547,6 +634,7 @@ header {
   border-radius: 100%;
   text-align: center;
   margin: auto;
+  margin-bottom: 30px;
 }
 
 .hr-system .progress-container:before, .hr-system .progress-container:after {
@@ -578,7 +666,7 @@ header {
 }
 
 .business-case {
-  padding-top: 15px;
+  padding: 15px 0;
 }
 
 .business-case h2 {
@@ -586,6 +674,7 @@ header {
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .business-case .counter-check .up {
@@ -599,6 +688,30 @@ header {
 
 .business-case .counter-check .up.yellow {
   color: #faa21d;
+}
+
+.simplify {
+  background-color: #cb4398;
+  padding: 15px 0;
+}
+
+.simplify h2 {
+  color: #FFFFFF;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.simplify p {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.simplify span {
+  color: #FFFFFF;
 }
 
 @media (min-width: 576px) {
@@ -720,13 +833,19 @@ header {
     font-size: 60px;
   }
   .business-case {
-    padding-top: 32px;
+    padding: 32px 0;
   }
   .business-case h2 {
     margin-bottom: 30px;
   }
   .business-case .counter-check .up {
     font-size: 39px;
+  }
+  .simplify {
+    padding: 32px 0;
+  }
+  .simplify h2 {
+    font-size: 2.2rem;
   }
 }
 
@@ -841,6 +960,9 @@ header {
   }
   .business-case .counter-check .up {
     font-size: 57px;
+  }
+  .simplify h2 {
+    font-size: 35px;
   }
 }
 

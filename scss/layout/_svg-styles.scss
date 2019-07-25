@@ -24,23 +24,51 @@
 #lightbulb {
     .cls-1,.cls-3{fill:none;stroke:#0071bc;stroke-linecap:round;stroke-linejoin:round;}
     .cls-1{stroke-width:3px;}
-    .cls-2{fill:#faa21d;}
+    .cls-2{
+        fill:#faa21d;
+        opacity: 0;
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 4s;
+    }
     .cls-3{stroke-width:3.9px;}
 }
 
 #calculator {
     .cls-1{fill:none;stroke:#0071bc;stroke-miterlimit:10;stroke-width:4.29px;}
-    .cls-2{fill:#df84ba;}
+    .cls-2{
+        fill:#df84ba;
+        opacity: 0;
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 4s;
+    }
 }
 
 #bill {
-    .cls-1{fill:#c4da5a;}.cls-2,
-    .cls-3{fill:none;stroke:#0071bc;stroke-linejoin:round;stroke-width:3px;}
+    .cls-1{
+        fill:#c4da5a;
+        opacity: 0;
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 4s;
+    }
+    .cls-2,.cls-3{fill:none;stroke:#0071bc;stroke-linejoin:round;stroke-width:3px;}
     .cls-3{stroke-linecap:square;}
 }
 
 #gear {
-    .cls-1{fill:#b1e1fa;}
+    .cls-1{
+        fill:#b1e1fa;
+        opacity: 0;
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 4s;
+    }
     .cls-2,.cls-3{fill:none;stroke:#0071bc;stroke-linejoin:round;stroke-width:3px;}
     .cls-3{stroke-linecap:round;}
 }
@@ -65,12 +93,26 @@
 #checklist {
     .cls-1,.cls-3{fill:none;stroke-linejoin:round;stroke-width:5.07px;}
     .cls-1{stroke:#46a040;}
-    .cls-2{fill:#df8aba;}
+    .cls-2{
+        fill:#df8aba;
+        opacity: 0;
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 4s;
+    }
     .cls-3{stroke:#df8aba;}
 }
 
 #clock {
-    .cls-1{fill:#f9be00;}
+    .cls-1{
+        fill:#f9be00;
+        opacity: 0;
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 4s;
+    }
     .cls-2,.cls-3{fill:none;stroke:#46a040;stroke-linecap:round;stroke-width:4.73px;}
     .cls-2{stroke-linejoin:round;}
     .cls-3{stroke-miterlimit:10;}

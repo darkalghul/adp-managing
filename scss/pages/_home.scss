@@ -11,6 +11,7 @@
             margin-top: 20px;
             font-size: 1.5rem;
             margin-bottom: 15px;
+            font-weight: 600;
         }
 
         p {
@@ -28,6 +29,7 @@
         margin-top: 0;
         margin-bottom: 20px;
         font-size: 1.2rem;
+        font-weight: 600;
     }
 
     .align-mobile {
@@ -91,6 +93,7 @@
         margin-top: 0;
         margin-bottom: 20px;
         font-size: 1.2rem;
+        font-weight: 600;
     }
 
     .info-container {
@@ -113,11 +116,37 @@
     }
     
     .mobile {
+        margin-bottom: 30px;
+
+        .col-6:first-child {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                background-color: #696a69;
+                width: 8px;
+                height: calc(100% + 30px);
+                right: 5px;
+                top: -15px;
+            }
+        }
+
         svg {
             width: 130px;
             height: 229px;
             display: block;
-            margin: auto;
+            position: relative;
+
+            &#checklist-left {
+                margin-left: auto;
+                right: -15px;
+            }
+            
+            &#checklist-right {
+                margin-right: auto;
+                left: -20px;
+            }
         }
     }
 
@@ -136,6 +165,7 @@
         border-radius: 100%;
         text-align: center;
         margin: auto;
+        margin-bottom: 30px;
 
         &:before, &:after {
             content: '';
@@ -168,13 +198,14 @@
 }
 
 .business-case {
-    padding-top: 15px;
+    padding: 15px 0;
 
     h2 {
         color: #c4da5a;
         margin-top: 0;
         margin-bottom: 20px;
         font-size: 1.2rem;
+        font-weight: 600;
     }
 
     .counter-check {
@@ -190,6 +221,30 @@
                 color: #faa21d;
             }
         }
+    }
+}
+
+.simplify {
+    background-color: #cb4398;
+    padding: 15px 0;
+
+    h2 {
+        color: $white;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    p {
+        color: $white;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    span {
+        color: $white;
     }
 }
 
@@ -378,7 +433,7 @@
     }
 
     .business-case {
-        padding-top: 32px;
+        padding: 32px 0;
 
         h2 {
             margin-bottom: 30px;
@@ -388,6 +443,14 @@
             .up {
                 font-size: 39px;
             }
+        }
+    }
+
+    .simplify {
+        padding: 32px 0;
+
+        h2 {
+            font-size: 2.2rem;
         }
     }
 }
@@ -548,6 +611,12 @@
             .up {
                 font-size: 57px;
             }
+        }
+    }
+
+    .simplify {
+        h2 {
+            font-size: 35px;
         }
     }
 }
