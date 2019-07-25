@@ -37,7 +37,7 @@
     .tagline {
         font-size: 0.9rem;
         margin-top: 35px;
-        margin-bottom: 0; 
+        margin-bottom: 35px; 
     }
 
     .image-container {
@@ -140,12 +140,55 @@
         &:before, &:after {
             content: '';
             position: absolute;
+            border-radius: 50%;
+        }
+
+        &:before {
+            background-color: #faa21d;
+            width: 40px;
+            height: 40px;
+            right: -5px;
+            top: -35px;
+        }
+
+        &:after {
+            background-color: #ffd923;
+            width: 55px;
+            height: 55px;
+            right: -54px;
+            top: 0;
         }
 
         span {
             font-weight: 600;
             color: $white;
             font-size: 50px
+        }
+    }
+}
+
+.business-case {
+    padding-top: 15px;
+
+    h2 {
+        color: #c4da5a;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .counter-check {
+        .up {
+            font-size: 50px;
+            font-weight: 600;
+
+            &.purple {
+                color: #cb4398;
+            }
+
+            &.yellow {
+                color: #faa21d;
+            }
         }
     }
 }
@@ -247,6 +290,7 @@
 
         .tagline {
             height: 60px;
+            // margin-bottom: 0;
         }
 
         .align-mobile {
@@ -329,6 +373,20 @@
 
             span {
                 font-size: 60px;
+            }
+        }
+    }
+
+    .business-case {
+        padding-top: 32px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .counter-check {
+            .up {
+                font-size: 39px;
             }
         }
     }
@@ -480,6 +538,18 @@
             }
         }
     }
+
+    .business-case {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .counter-check {
+            .up {
+                font-size: 57px;
+            }
+        }
+    }
 }
 
 @media(min-width: 1200px) {
@@ -554,6 +624,14 @@
 
         .progress-container {
             padding: 85px 0;
+        }
+    }
+
+    .business-case {
+        .counter-check {
+            .up {
+                font-size: 66px;
+            }
         }
     }
 }

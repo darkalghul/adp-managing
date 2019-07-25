@@ -323,6 +323,43 @@ header {
   stroke-width: 5.07px;
 }
 
+#checklist .cls-1, #checklist .cls-3 {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-width: 5.07px;
+}
+
+#checklist .cls-1 {
+  stroke: #46a040;
+}
+
+#checklist .cls-2 {
+  fill: #df8aba;
+}
+
+#checklist .cls-3 {
+  stroke: #df8aba;
+}
+
+#clock .cls-1 {
+  fill: #f9be00;
+}
+
+#clock .cls-2, #clock .cls-3 {
+  fill: none;
+  stroke: #46a040;
+  stroke-linecap: round;
+  stroke-width: 4.73px;
+}
+
+#clock .cls-2 {
+  stroke-linejoin: round;
+}
+
+#clock .cls-3 {
+  stroke-miterlimit: 10;
+}
+
 .btn {
   font-size: 16px;
 }
@@ -400,7 +437,7 @@ header {
 .payroll-operations .tagline {
   font-size: 0.9rem;
   margin-top: 35px;
-  margin-bottom: 0;
+  margin-bottom: 35px;
 }
 
 .payroll-operations .image-container {
@@ -515,12 +552,53 @@ header {
 .hr-system .progress-container:before, .hr-system .progress-container:after {
   content: '';
   position: absolute;
+  border-radius: 50%;
+}
+
+.hr-system .progress-container:before {
+  background-color: #faa21d;
+  width: 40px;
+  height: 40px;
+  right: -5px;
+  top: -35px;
+}
+
+.hr-system .progress-container:after {
+  background-color: #ffd923;
+  width: 55px;
+  height: 55px;
+  right: -54px;
+  top: 0;
 }
 
 .hr-system .progress-container span {
   font-weight: 600;
   color: #FFFFFF;
   font-size: 50px;
+}
+
+.business-case {
+  padding-top: 15px;
+}
+
+.business-case h2 {
+  color: #c4da5a;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.business-case .counter-check .up {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.business-case .counter-check .up.purple {
+  color: #cb4398;
+}
+
+.business-case .counter-check .up.yellow {
+  color: #faa21d;
 }
 
 @media (min-width: 576px) {
@@ -641,6 +719,15 @@ header {
   .hr-system .progress-container span {
     font-size: 60px;
   }
+  .business-case {
+    padding-top: 32px;
+  }
+  .business-case h2 {
+    margin-bottom: 30px;
+  }
+  .business-case .counter-check .up {
+    font-size: 39px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -749,6 +836,12 @@ header {
   .hr-system .progress-container span {
     font-size: 66px;
   }
+  .business-case h2 {
+    font-size: 1.5rem;
+  }
+  .business-case .counter-check .up {
+    font-size: 57px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -803,6 +896,9 @@ header {
   }
   .hr-system .progress-container {
     padding: 85px 0;
+  }
+  .business-case .counter-check .up {
+    font-size: 66px;
   }
 }
 /*# sourceMappingURL=main.css.map */
