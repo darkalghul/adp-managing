@@ -160,11 +160,6 @@ header {
   width: 100%;
 }
 
-header #logo .cls-1 {
-  fill: #FFFFFF;
-  stroke: none;
-}
-
 #logo .cls-1 {
   fill: #FFFFFF;
 }
@@ -279,6 +274,53 @@ header #logo .cls-1 {
 
 #gear .cls-3 {
   stroke-linecap: round;
+}
+
+#checklist-left .cls-1 {
+  fill: #dae245;
+}
+
+#checklist-left .cls-2, #checklist-left .cls-3 {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-width: 5.58px;
+}
+
+#checklist-left .cls-2 {
+  stroke: #c4da5d;
+}
+
+#checklist-left .cls-3 {
+  stroke: #ee7623;
+}
+
+#checklist-right .cls-1 {
+  fill: #66beeb;
+}
+
+#checklist-right .cls-2, #checklist-right .cls-3, #checklist-right .cls-4, #checklist-right .cls-5 {
+  fill: none;
+  stroke: #ee7623;
+}
+
+#checklist-right .cls-2 {
+  stroke-miterlimit: 10;
+}
+
+#checklist-right .cls-2, #checklist-right .cls-3, #checklist-right .cls-5 {
+  stroke-width: 5.58px;
+}
+
+#checklist-right .cls-3 {
+  stroke-linecap: square;
+}
+
+#checklist-right .cls-3, #checklist-right .cls-4, #checklist-right .cls-5 {
+  stroke-linejoin: round;
+}
+
+#checklist-right .cls-4 {
+  stroke-width: 5.07px;
 }
 
 .btn {
@@ -411,6 +453,42 @@ header #logo .cls-1 {
   color: #64beeb;
 }
 
+.hr-system {
+  background-color: #F4F4F5;
+  padding: 30px 0;
+}
+
+.hr-system h2 {
+  color: #faa21d;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.hr-system .info-container .text {
+  text-align: center;
+}
+
+.hr-system .info-container .text > span {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.hr-system .info-container .text > span.green {
+  color: #46a040;
+}
+
+.hr-system .info-container .text > span.blue {
+  color: #65beeb;
+}
+
+.hr-system .mobile svg {
+  width: 130px;
+  height: 229px;
+  display: block;
+  margin: auto;
+}
+
 @media (min-width: 576px) {
   .banner .left-side {
     position: relative;
@@ -468,6 +546,53 @@ header #logo .cls-1 {
   }
   .payroll-operations .image-container .numbers p {
     font-size: 66px;
+  }
+  .hr-system h2 {
+    margin-bottom: 30px;
+  }
+  .hr-system .middle-bar {
+    position: relative;
+  }
+  .hr-system .middle-bar:before {
+    content: '';
+    position: absolute;
+    background-color: #696a69;
+    top: -15px;
+    width: 10px;
+    right: 0px;
+    height: calc(100% + 30px);
+  }
+  .hr-system .info-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 220px;
+  }
+  .hr-system .info-container .text {
+    text-align: left;
+  }
+  .hr-system .info-container .text > span {
+    font-size: 60px;
+  }
+  .hr-system .info-container .svg-container {
+    position: absolute;
+    top: 0;
+    width: 125px;
+    height: 220px;
+  }
+  .hr-system .info-container .svg-container.left-side {
+    right: -108px;
+  }
+  .hr-system .info-container .svg-container.right-side {
+    left: -135px;
+  }
+  .hr-system .info-container .svg-container svg {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -545,6 +670,32 @@ header #logo .cls-1 {
     -webkit-transform: translateX(45%);
             transform: translateX(45%);
   }
+  .hr-system h2 {
+    font-size: 1.5rem;
+  }
+  .hr-system .middle-bar {
+    position: relative;
+  }
+  .hr-system .middle-bar:before {
+    width: 17px;
+    right: -7px;
+  }
+  .hr-system .info-container {
+    height: 318px;
+  }
+  .hr-system .info-container .text > span {
+    font-size: 66px;
+  }
+  .hr-system .info-container .svg-container {
+    width: 180px;
+    height: 318px;
+  }
+  .hr-system .info-container .svg-container.left-side {
+    right: -190px;
+  }
+  .hr-system .info-container .svg-container.right-side {
+    left: -188px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -583,6 +734,19 @@ header #logo .cls-1 {
     right: -75%;
     -webkit-transform: translateX(35%);
             transform: translateX(35%);
+  }
+  .hr-system .info-container {
+    height: 392px;
+  }
+  .hr-system .info-container .svg-container {
+    width: 222px;
+    height: 392px;
+  }
+  .hr-system .info-container .svg-container.left-side {
+    right: -224px;
+  }
+  .hr-system .info-container .svg-container.right-side {
+    left: -220px;
   }
 }
 /*# sourceMappingURL=main.css.map */
