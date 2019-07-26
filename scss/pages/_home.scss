@@ -256,51 +256,6 @@
     }
 }
 
-@media(min-width: 576px) {
-    .banner {
-        .left-side {
-            position: relative;
-            z-index: 1;
-
-            // &:before {
-            //     content: "";
-            //     position: absolute;
-            //     top: 0px;
-            //     right: 44px;
-            //     z-index: -1;
-            //     background-image: image("canada-flag.svg");
-            //     background-position: center center;
-            //     background-size: 102px;
-            //     background-repeat: no-repeat;
-            //     width: 100px;
-            //     height: 88px;
-            //     animation: scale 2s;
-            // }
-        }
-
-        .right-side {
-            position: relative;
-            background-image: none;
-            z-index: 1;
-
-            // &:before {
-            //     content: "";
-            //     position: absolute;
-            //     top: -10px;
-            //     left: 50px;
-            //     z-index: -1;
-            //     background-image: image("usa-flag.svg");
-            //     background-position: center center;
-            //     background-size: 112px;
-            //     background-repeat: no-repeat;
-            //     width: 114px;
-            //     height: 88px;
-            //     animation: scale 2s;
-            // }
-        }
-    }
-}
-
 @media(min-width: 768px) {
     .banner {
         padding-top: 100px;

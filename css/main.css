@@ -41,62 +41,13 @@ h2,
 h3,
 h4,
 h5 {
-  color: #FAA21D;
+  color: #56565A;
   text-transform: none;
 }
 
 p {
   color: #56565A;
   word-wrap: break-word;
-}
-
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.hide-text {
-  overflow: hidden;
-  padding: 0;
-  text-indent: 101%;
-  white-space: nowrap;
-}
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.link-center {
-  text-align: center;
-}
-
-.no-link {
-  cursor: default;
-  pointer-events: none;
-}
-
-.text-white {
-  color: #FFFFFF;
-}
-
-.bold-text {
-  font-weight: bold;
-}
-
-.no-break {
-  white-space: nowrap;
-}
-
-img {
-  margin: 0 auto;
 }
 
 @-webkit-keyframes fadeIn {
@@ -429,38 +380,6 @@ footer p {
           animation-delay: 2s;
 }
 
-.btn {
-  font-size: 16px;
-}
-
-.btn-general, .btn-general.active.focus, .btn-general.active:focus, .btn-general.active:hover, .btn-general.focus:active, .btn-general:active:focus, .btn-general:active:hover {
-  font-weight: 700;
-  text-transform: uppercase;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-color: #FAA21D;
-  padding: 10px 15px;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-align: center;
-  border: none;
-  border-radius: 25px;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-  line-height: 30px;
-  outline: none;
-}
-
-.btn-general:hover, .btn-general.active:hover, .btn-general:hover:active, .btn-general:active, .btn-general.focus:active, .btn-general:active:focus, .btn-general:active:hover, .btn-general:focus, .btn-general.active:focus, .btn-general:focus:active {
-  background-color: #022B3A;
-  text-decoration: none;
-  color: #FFFFFF;
-  border: none;
-}
-
 .banner {
   background: #9E1F64;
   background: -webkit-gradient(linear, right top, left top, from(#9E1F64), to(#92278F));
@@ -735,18 +654,6 @@ footer p {
 
 .simplify span {
   color: #FFFFFF;
-}
-
-@media (min-width: 576px) {
-  .banner .left-side {
-    position: relative;
-    z-index: 1;
-  }
-  .banner .right-side {
-    position: relative;
-    background-image: none;
-    z-index: 1;
-  }
 }
 
 @media (min-width: 768px) {
