@@ -232,14 +232,6 @@ footer p {
 #lightbulb .cls-2 {
   fill: #faa21d;
   opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-          animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 
 #lightbulb .cls-3 {
@@ -256,27 +248,11 @@ footer p {
 #calculator .cls-2 {
   fill: #df84ba;
   opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-          animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 
 #bill .cls-1 {
   fill: #c4da5a;
   opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-          animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 
 #bill .cls-2, #bill .cls-3 {
@@ -293,14 +269,6 @@ footer p {
 #gear .cls-1 {
   fill: #b1e1fa;
   opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-          animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 
 #gear .cls-2, #gear .cls-3 {
@@ -374,14 +342,6 @@ footer p {
 #checklist .cls-2 {
   fill: #df8aba;
   opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-          animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 
 #checklist .cls-3 {
@@ -391,14 +351,6 @@ footer p {
 #clock .cls-1 {
   fill: #f9be00;
   opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-          animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
 }
 
 #clock .cls-2, #clock .cls-3 {
@@ -414,6 +366,72 @@ footer p {
 
 #clock .cls-3 {
   stroke-miterlimit: 10;
+}
+
+#lightbulb .fadeIn {
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#calculator .fadeIn {
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#bill .fadeIn {
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#gear .fadeIn {
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#checklist .fadeIn {
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#clock .fadeIn {
+  -webkit-animation: fadeIn ease-in 1;
+          animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .btn {

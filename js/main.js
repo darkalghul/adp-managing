@@ -1,3 +1,31 @@
+let scroll = window.requestAnimationFrame ||
+             function(callback) {
+                 window.setTimeout(callback, 100/60)
+             };
+
+let fadeInElements = document.querySelectorAll('.fade');
+
+function loopFade() {
+    fadeInElements.forEach(function(element) {
+        if(isElementInViewPort(element)) {
+            element.classList.add('fadeIn');
+        }
+    });
+
+    scroll(loopFade);
+}
+
+function isElementInViewPort(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        (rect.top <= 0 && rect.bottom >= 0) ||
+        (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
+        (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+    );
+}
+
+loopFade();
+
 let payrollCounter = 0,
     toolsetCounter = 0,
     businessCounter = 0;

@@ -27,10 +27,6 @@
     .cls-2{
         fill:#faa21d;
         opacity: 0;
-        animation: fadeIn ease-in 1;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-delay: 4s;
     }
     .cls-3{stroke-width:3.9px;}
 }
@@ -40,10 +36,6 @@
     .cls-2{
         fill:#df84ba;
         opacity: 0;
-        animation: fadeIn ease-in 1;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-delay: 4s;
     }
 }
 
@@ -51,10 +43,6 @@
     .cls-1{
         fill:#c4da5a;
         opacity: 0;
-        animation: fadeIn ease-in 1;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-delay: 4s;
     }
     .cls-2,.cls-3{fill:none;stroke:#0071bc;stroke-linejoin:round;stroke-width:3px;}
     .cls-3{stroke-linecap:square;}
@@ -64,10 +52,6 @@
     .cls-1{
         fill:#b1e1fa;
         opacity: 0;
-        animation: fadeIn ease-in 1;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-delay: 4s;
     }
     .cls-2,.cls-3{fill:none;stroke:#0071bc;stroke-linejoin:round;stroke-width:3px;}
     .cls-3{stroke-linecap:round;}
@@ -96,10 +80,6 @@
     .cls-2{
         fill:#df8aba;
         opacity: 0;
-        animation: fadeIn ease-in 1;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-delay: 4s;
     }
     .cls-3{stroke:#df8aba;}
 }
@@ -108,12 +88,64 @@
     .cls-1{
         fill:#f9be00;
         opacity: 0;
-        animation: fadeIn ease-in 1;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-delay: 4s;
     }
     .cls-2,.cls-3{fill:none;stroke:#46a040;stroke-linecap:round;stroke-width:4.73px;}
     .cls-2{stroke-linejoin:round;}
     .cls-3{stroke-miterlimit:10;}
+}
+
+// Animation for fill
+
+#lightbulb {
+    .fadeIn{
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 2s;
+    }
+}
+
+#calculator {
+    .fadeIn{
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 2s;
+    }
+}
+
+#bill {
+    .fadeIn{
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 2s;
+    }
+}
+
+#gear {
+    .fadeIn{
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 2s;
+    }
+}
+
+#checklist {
+    .fadeIn{
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 2s;
+    }
+}
+
+#clock {
+    .fadeIn{
+        animation: fadeIn ease-in 1;
+        animation-fill-mode: forwards;
+        animation-duration: 1s;
+        animation-delay: 2s;
+    }
 }
