@@ -79,6 +79,12 @@ function onScroll(counterContainer, counter) {
         }
     }
 }
+let line = new Vivus('line', {
+    type: 'delayed',
+    duration: 100,
+    animTimingFunction: Vivus.EASE
+});
+
 let lightbulb = new Vivus('lightbulb', {
     type: 'oneByOne',
     duration: 100,

@@ -50,18 +50,6 @@ p {
   word-wrap: break-word;
 }
 
-a {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  color: #C4DA5A;
-  text-decoration: none;
-}
-
-a:hover, a:active, a:focus {
-  text-decoration: underline;
-  color: #022B3A;
-}
-
 .clearfix::after {
   clear: both;
   content: '';
@@ -216,6 +204,13 @@ footer p {
 
 #usa .cls-6 {
   fill: #325875;
+}
+
+#line .cls-1 {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 1.2px;
 }
 
 #lightbulb .cls-1, #lightbulb .cls-3 {
@@ -492,6 +487,12 @@ footer p {
   font-size: .8rem;
 }
 
+.banner .middle-line {
+  right: -10.25%;
+  bottom: 10.5%;
+  width: 21%;
+}
+
 .payroll-operations {
   padding-top: 15px;
 }
@@ -753,6 +754,11 @@ footer p {
     padding-top: 100px;
     padding-bottom: 40px;
   }
+  .banner .middle-line {
+    right: -8.25%;
+    bottom: 12.5%;
+    width: 18%;
+  }
   .banner .left-side:before {
     top: 2px;
     right: 66px;
@@ -872,6 +878,11 @@ footer p {
 }
 
 @media (min-width: 992px) {
+  .banner .middle-line {
+    right: -7.25%;
+    bottom: 13.5%;
+    width: 16%;
+  }
   .banner .left-side:before {
     top: 6px;
     right: 75px;
@@ -989,6 +1000,11 @@ footer p {
 }
 
 @media (min-width: 1200px) {
+  .banner .middle-line {
+    right: -8.25%;
+    bottom: 12.5%;
+    width: 17.5%;
+  }
   .banner .left-side:before {
     top: 4px;
     right: 92px;

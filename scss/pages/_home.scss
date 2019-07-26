@@ -19,6 +19,12 @@
             font-size: .8rem;
         }
     }
+
+    .middle-line {
+        right: -10.25%;
+        bottom: 10.5%;
+        width: 21%;
+    }
 }
 
 .payroll-operations {
@@ -300,6 +306,12 @@
         padding-top: 100px;
         padding-bottom: 40px;
 
+        .middle-line {
+            right: -8.25%;
+            bottom: 12.5%;
+            width: 18%;
+        }
+
         .left-side {
             &:before {
                 top: 2px;
@@ -459,6 +471,12 @@
 
 @media(min-width: 992px) {
     .banner {
+        .middle-line {
+            right: -7.25%;
+            bottom: 13.5%;
+            width: 16%;
+        }
+
         .left-side {
             &:before {
                 top: 6px;
@@ -625,6 +643,12 @@
 
 @media(min-width: 1200px) {
     .banner {
+        .middle-line {
+            right: -8.25%;
+            bottom: 12.5%;
+            width: 17.5%;
+        }
+
         .left-side {
             &:before {
                 top: 4px;

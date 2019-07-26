@@ -20,15 +20,3 @@ p {
     color: $text-color;
     word-wrap: break-word;
 }
-
-a {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    color: $third-color;
-    text-decoration: none;
-    
-    @include on-event {
-        text-decoration: underline;
-        color: $hover-color;
-    }
-}
